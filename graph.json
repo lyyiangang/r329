@@ -1,0 +1,554 @@
+{
+"graph_name":"densnet",
+"platform target":"Z1_0701",
+"total nodes number":43,
+"perf nodes number":41,
+"nodes":[{
+"layer node name":"data",
+"op_type":"Input",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_resnetv22_conv0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":237633536,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_conv0_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_pool0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":802816,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_pool0_fwd",
+"op_type":"Pooling"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage1_batchnorm0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":6272,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage1_batchnorm0_fwd",
+"op_type":"BatchNorm"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage1_activation0",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":200704,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage1_activation0",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage1_conv0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231612416,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage1_conv0_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage1_conv1_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231813120,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage1_conv1_fwd",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"resnetv22_stage1__plus0",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage1_batchnorm2_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":6272,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage1_batchnorm2_fwd",
+"op_type":"BatchNorm"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage1_activation2",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":200704,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage1_activation2",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage1_conv2_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231612416,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage1_conv2_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage1_conv3_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231813120,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage1_conv3_fwd",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"resnetv22_stage1__plus1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage2_batchnorm0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":6272,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage2_batchnorm0_fwd",
+"op_type":"BatchNorm"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage2_activation0",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":200704,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage2_activation0",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage2_conv0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":115806208,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage2_conv0_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage2_conv1_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231411712,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage2_conv1_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage2_conv2_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":13146112,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage2_conv2_fwd",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"resnetv22_stage2__plus0",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage2_batchnorm2_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1568,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage2_batchnorm2_fwd",
+"op_type":"BatchNorm"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage2_activation2",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":100352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage2_activation2",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage2_conv3_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231411712,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage2_conv3_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage2_conv4_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231512064,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage2_conv4_fwd",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"resnetv22_stage2__plus1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage3_batchnorm0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1568,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage3_batchnorm0_fwd",
+"op_type":"BatchNorm"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage3_activation0",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":100352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage3_activation0",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage3_conv0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":115705856,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage3_conv0_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage3_conv1_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231311360,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage3_conv1_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage3_conv2_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":12995584,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage3_conv2_fwd",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"resnetv22_stage3__plus0",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage3_batchnorm2_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":392,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage3_batchnorm2_fwd",
+"op_type":"BatchNorm"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage3_activation2",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":50176,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage3_activation2",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage3_conv3_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231311360,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage3_conv3_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage3_conv4_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231361536,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage3_conv4_fwd",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"resnetv22_stage3__plus1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage4_batchnorm0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":392,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage4_batchnorm0_fwd",
+"op_type":"BatchNorm"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage4_activation0",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":50176,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage4_activation0",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage4_conv0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":115655680,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage4_conv0_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage4_conv1_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231261184,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage4_conv1_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage4_conv2_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":12920320,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage4_conv2_fwd",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"resnetv22_stage4__plus0",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage4_batchnorm2_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":98,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage4_batchnorm2_fwd",
+"op_type":"BatchNorm"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage4_activation2",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":25088,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage4_activation2",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage4_conv3_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231261184,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage4_conv3_fwd",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_stage4_conv4_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231286272,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_stage4_conv4_fwd",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"resnetv22_stage4__plus1",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_batchnorm2_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":98,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_batchnorm2_fwd",
+"op_type":"BatchNorm"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_relu1_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":25088,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_relu1_fwd",
+"op_type":"Activation"
+}
+]
+}
+,{
+"layer node name":"subgraph_resnetv22_pool1_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":25088,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_pool1_fwd",
+"op_type":"Pooling"
+}
+]
+}
+,{
+"layer node name":"resnetv22_flatten0_reshape0",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_resnetv22_dense0_fwd",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":1026000,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"resnetv22_dense0_fwd",
+"op_type":"FullyConnected"
+}
+]
+}
+],
+"origin_idx":[[0],[1],[2],[3],[4],[5],[6,7],[8],[9],[10],[11,12],[13],[14],[15],[16],[17,18],[19],[20],[21],[22,23],[24],[25],[26],[27],[28,29],[30],[31],[32],[33,34],[35],[36],[37],[38],[39,40],[41],[42],[43],[44,45],[46],[47],[48],[49],[50]],
+"run_node_idx":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[21],[22],[23],[24],[25],[26],[27],[28],[29],[30],[31],[32],[33],[34],[35],[36],[37],[38],[39],[40],[41],[42]],
+"profile":{
+"profile events":"default",
+"output size":1536,
+"frequency":800,
+"prof_unit":"AIFF"
+}
+,
+"magic number":"63b2bb9bea2f2caae1be1497e4a7509df069feea"
+}
+
