@@ -1,5 +1,7 @@
 R329是矽速科技开发的强大的AI功能,今天尝试下在上面部署分类网络resnet18.
 模型量化的代码及数据我都放在了[github](https://github.com/lyyiangang/r329)
+# 启动环境
+这里使用docker镜像做
 # 模型下载
 onnx模型是有个一个model zoo的,其中resnet18的下载地址为:[链接](https://github.com/onnx/models/tree/master/vision/classification/resnet/model)
 
@@ -13,6 +15,18 @@ onnx模型是有个一个model zoo的,其中resnet18的下载地址为:[链接](
 输出:
 
 ![](imgs/2021-07-22-17-24-52.png)
+
+# 启动容器
+docker 容器里面包含了转换模型的依赖项， 只要bash里运行以下命令即可。
+```bash
+docker run --gpus all -it --rm     \
+    -e DISPLAY=$DISPLAY     \
+    -v /tmp/.X11-unix:/tmp/.X11-unix     \
+    -v ${PWD}:${PWD} \
+    -w ${PWD} \
+    --name zhouyi \
+    zepan/zhouyi
+```
 
 # 生成calibration数据
 
